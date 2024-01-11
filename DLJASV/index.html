@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FootyQuiz - Devine le joueur grâce à sa voix ! </title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+
+<header>
+  <div class="header-content">
+    <div class="header-left">
+      <img class="header-image" src="../img/logo2.png" alt="Photo">
+      <a href="../index.html" class="titre"><strong>FootyQuiz</strong></a>
+    </div>
+    <div class="header-center"></div>
+    <div class="center-words">
+      <a href="../index.html" class="word">Accueil</a>
+      <a href="../index.html" class="word">Quizz</a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="hero" id="section1">
+    <h2>DEVINE LE JOUEUR AVEC SA VOIX !</h2>
+    <p><center> Tu as choisi le jeu "Devine le joueur à partir de sa voix". Dans ce jeu, tu écouteras <br> un extrait audio et tu devras identifier quel joueur se cache derrière cette voix. <br> Voici quelques règles à suivre : seuls les noms de famille seront pris en compte, <br> les majuscules ne sont pas obligatoires, mais les accents comptent. <br> Profite bien du jeu, bonne chance !</center></p>
+    <a href="#" class="cta-button" id="startButton">Commencer le quiz</a>
+
+  </section>
+
+  <div class="quiz-container" id="quizContainer">
+    <div id="audioContainer">
+      <audio id="audioPlayer" controls></audio>
+    </div>
+    <div id="questionContainer"></div> <!-- Ajoutez cette ligne -->
+    <div id="answerContainer">
+      <input type="text" id="answerInput" placeholder="Réponse">
+      <button type="button" id="submitAnswer">Soumettre</button>
+    </div>
+    <div id="resultContainer" style="display: none;">
+      <h2>Récapitulatif du Quiz</h2>
+      <div id="resultSummary"></div>
+      <button id="restartButton" onclick="restartQuiz()">Recommencer</button>
+    </div>
+</div>
+
+</main>
+
+</body>
+</html>

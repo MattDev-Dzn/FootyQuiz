@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Styles généraux */
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f2f2f2;
+  }
+  
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Styles de l'en-tête */
+  header {
+    background-color: #3498db;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .titre {
+    margin-left: 20px;
+    font-size: 170%;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+  }
+  
+  .header-image {
+    width: 50px;
+  }
+  
+  .header-left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .center-words {
+    text-align: center;
+  }
+  
+  .center-words a {
+    display: inline-block;
+    font-family: 'Lato', sans-serif;
+    color: #ffffff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .center-words a:hover {
+    color: #5bdb34;
+  }
+  
+  /* Styles de la section principale */
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  h2 {
+    text-align: center;
+  }
+  
+  #quizContainer {
+    margin: 20px auto;
+    width: 600px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  #audioContainer {
+    text-align: center;
+  }
+  
+  #audioPlayer {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  #buttonContainer {
+    text-align: center;
+  }
+  
+  #buttonContainer button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  
+  #buttonContainer button:hover {
+    background-color: #45a049;
+  }
+  
+  .result-container {
+    margin-top: 20px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .result-summary {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .result {
+    margin-bottom: 10px;
+  }
+  
+  .answer {
+    font-weight: bold;
+  }
+  
+  .correct {
+    color: green;
+  }
+  
+  .incorrect {
+    color: red;
+  }
+  
+  .cta-button {
+    display: block;
+    width: 150px;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    margin-top: 30px;
+  }
+  
+  #quizContainer,
+  #resultContainer {
+    display: none;
+  }
+  
+ /* Ajoutez les styles pour la case de réponse */
+#answerContainer {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  #answerInput {
+    padding: 10px;
+    font-size: 16px;
+    width: 60%;
+  }
+  
+  #submitAnswer {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  
+  #submitAnswer:hover {
+    background-color: #45a049;
+  }
+  

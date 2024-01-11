@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FootyQuiz - Qui suis-je ? </title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+</head>
+<body>
+
+    <header>
+        <div class="header-content">
+          <div class="header-left">
+            <img class="header-image" src="../img/logo2.png" alt="Photo">
+            <a href="../index.html" class="titre"><strong>FootyQuiz</strong></a>
+        </div>
+          <div class="header-center">
+        </div>
+        <div class="center-words">
+        <a href="../index.html" class="word">Accueil</a>
+        <a href="../index.html" class="word">Quizz</a>
+        </div>
+          </div>
+        </div>
+      </header>
+
+      <div class="quiz-container" id="quizContainer">
+  <div id="questionContainer">
+    <h3 id="questionTitle">Qui suis-je ?</h3>
+    <ul id="clubList"></ul>
+  </div>
+  <div id="answerContainer"> <!-- Ajout du conteneur pour la réponse -->
+    <h4>Réponse :</h4>
+    <input type="text" id="answerInput"> <!-- Zone de texte pour la réponse -->
+    <p id="answer"></p>
+  </div>
+
+  <div id="buttonContainer">
+    <button onclick="checkAnswer()">Vérifier</button>
+    <button onclick="nextQuestion()">Passer</button>
+    <div id="timer"></div>
+  </div>
+</div>
+
+
+<main>
+    <section class="hero" id="section1">
+      <h2>QUI SUIS-JE ?</h2>
+      <p class="txt"> <br>Tu as choisis QUI SUIS-JE ? Tu auras donc une liste de clubs et tu devras deviner le joueur à qui appartient cette carrière. voici quelques consignes : seuls les noms de famille sont pris en compte, les majuscules ne sont pas obligatoire mais les accents eux sont prix en compte. Je vous laisse profiter du jeu. <center>Bonne Chance !</center><br></p>
+      <a href="#" class="cta-button" onclick="startQuiz()">Commencer le quiz</a>
+    </section>
+
+    <div class="quiz-container" id="quizContainer">
+      <div id="questionContainer"></div>
+      <div id="buttonContainer">
+        <button onclick="checkAnswer()">Vérifier</button>
+        <button onclick="nextQuestion()">Passer</button>
+        <div id="timer"></div>
+      </div>
+    </div>
+
+    <div class="result-container" id="resultContainer">
+      <h2>Récapitulatif du Quiz</h2>
+      <div id="resultSummary"></div>
+      <button onclick="restartQuiz()">Recommencer</button>
+      <button onclick="goToHome()">Accueil</button>
+    </div>
+    
+      
+    </body>
+    </html>
